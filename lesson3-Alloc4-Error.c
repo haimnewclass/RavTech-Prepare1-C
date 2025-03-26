@@ -12,7 +12,7 @@ char* createMessage(int i) {
         exit(1);
     }
     snprintf(buffer, STR_SIZE, "Message number %d", i);
-    return buffer;  // ❗ הערך הזה לעולם לא ישוחרר!
+    return buffer;  
 }
 
 int main() {
@@ -22,11 +22,9 @@ int main() {
         char* msg = createMessage(counter);
         printf("%s\n", msg);
 
-        // ❗ באג: לא נעשה free(msg)
-        // התוכנית יוצרת עוד ועוד הקצאות מבלי לשחרר אותן
-
+        
         counter++;
-        sleep(1);  // השהייה כדי לראות את ההדפסות
+        sleep(1); 
     }
 
     return 0;
