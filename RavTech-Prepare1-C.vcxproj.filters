@@ -27,5 +27,23 @@
     <ClCompile Include="Lesson2-Files-Errors.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="q.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson3-Alloc2-Error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson3-Alloc1-Error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson3-Alloc3-Error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson3-Alloc4-Error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson3-Alloc5.Error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
