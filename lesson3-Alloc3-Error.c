@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -10,7 +10,7 @@ typedef struct User {
 
 User* createUser(const char* name) {
     User* u = (User*)malloc(sizeof(User));
-    u->name = (char*)malloc(strlen(name) + 1);
+    u->name = (char*)malloc(strlen(name) + 1);  // הקצאה לשם
     strcpy(u->name, name);
     u->leftFriend = NULL;
     u->rightFriend = NULL;
@@ -30,4 +30,27 @@ void printTree(User* root) {
 }
 
 void freeTree(User* root) {
-    if (!root)
+    if (!root) return;
+    freeTree(root->leftFriend);
+    freeTree(root->rightFriend);
+    free(root->name);
+    free(root);
+}
+
+int main() {
+    User* root = createUser("Alice");
+
+    User* bob = createUser("Bob");
+    User* carol = createUser("Carol");
+
+    connectFriends(root, bob, carol);
+
+    
+    User* eve = createUser("Eve");
+    connectFriends(bob, eve, NULL); 
+    eve = createUser("EveShadow");  
+
+    printTree(root);
+    freeTree(root);
+    return 0;
+}
