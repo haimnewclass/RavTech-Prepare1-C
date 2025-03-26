@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lesson2-LinkedList1-2Errors.c" />
+    <ClCompile Include="Lesson2-LinkedList2-Error.c" />
     <ClCompile Include="lesson2-main.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

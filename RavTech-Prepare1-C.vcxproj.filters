@@ -21,5 +21,8 @@
     <ClCompile Include="Lesson2-LinkedList1-2Errors.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lesson2-LinkedList2-Error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
