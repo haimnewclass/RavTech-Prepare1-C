@@ -27,6 +27,7 @@
     <ClCompile Include="Lesson3-Alloc4-Error.c" />
     <ClCompile Include="Lesson3-Alloc5.Error.c" />
     <ClCompile Include="Lesson3-Debugger.c" />
+    <ClCompile Include="Lesson3-Marco.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

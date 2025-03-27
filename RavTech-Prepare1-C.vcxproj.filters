@@ -39,5 +39,8 @@
     <ClCompile Include="Lesson3-Debugger.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lesson3-Marco.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

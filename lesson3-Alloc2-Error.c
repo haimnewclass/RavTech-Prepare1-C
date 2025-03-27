@@ -6,7 +6,7 @@
 
 #define MAX_LEN 50
 
-int main2() {
+int main22() {
     char* name1 = (char*)malloc(MAX_LEN);
     char* name2 = (char*)malloc(MAX_LEN);
     char* fullName = (char*)malloc(2 * MAX_LEN);
