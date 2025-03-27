@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <windows.h>
 
 #define INITIAL_SIZE 4
 
-int main() {
+int main8() {
     int* arr = (int*)malloc(INITIAL_SIZE * sizeof(int));
     if (!arr) {
         printf("Initial allocation failed.\n");
@@ -22,7 +23,7 @@ int main() {
         if (logicalSize >= capacity) {
             
             capacity *= 2;
-            
+			//int* temp = (int*)realloc(arr, capacity * sizeof(int));
         }
 
         printf("Inserted %d (logical size: %d, capacity: %d)\n", arr[logicalSize - 1], logicalSize, capacity);
@@ -30,7 +31,7 @@ int main() {
         
         if (logicalSize % 100000 == 0) {
             printf("Sleeping for a second...\n");
-            sleep(1);
+            Sleep(1);
         }
     }
 

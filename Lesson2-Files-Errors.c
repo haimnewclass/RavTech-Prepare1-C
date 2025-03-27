@@ -7,14 +7,18 @@ typedef struct {
     float salary;
 } Employee;
 
-int main() {
+int main1() {
     FILE* fp;
     Employee emp;
+    errno_t err;
 
-    fp = fopen("employees.txt", "r");
+    err = fopen_s(&fp, "employees.txt", "r");
+    if (err != 0) {
+        printf("Failed to open file\n");
+        return 1;
+    }
 
-    while (!feof(fp)) {
-        fscanf(fp, "%d %s %f", &emp.id, emp.name, &emp.salary);
+    while (fscanf_s(fp, "%d %19s %f", &emp.id, emp.name, (unsigned)_countof(emp.name), &emp.salary) == 3) {
         printf("ID: %d | Name: %s | Salary: %.2f\n", emp.id, emp.name, emp.salary);
     }
 

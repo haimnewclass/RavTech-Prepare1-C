@@ -20,15 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lesson2-Files-Errors.c" />
-    <ClCompile Include="Lesson2-LinkedList1-2Errors.c" />
-    <ClCompile Include="Lesson2-LinkedList2-Error.c" />
     <ClCompile Include="lesson2-main.c" />
     <ClCompile Include="Lesson3-Alloc1-Error.c" />
     <ClCompile Include="Lesson3-Alloc2-Error.c" />
     <ClCompile Include="Lesson3-Alloc3-Error.c" />
     <ClCompile Include="Lesson3-Alloc4-Error.c" />
     <ClCompile Include="Lesson3-Alloc5.Error.c" />
-    <ClCompile Include="q.c" />
+    <ClCompile Include="Lesson3-Debugger.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

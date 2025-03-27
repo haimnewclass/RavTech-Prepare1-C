@@ -10,8 +10,8 @@ typedef struct User {
 
 User* createUser(const char* name) {
     User* u = (User*)malloc(sizeof(User));
-    u->name = (char*)malloc(strlen(name) + 1);  // הקצאה לשם
-    strcpy(u->name, name);
+    u->name = (char*)malloc(strlen(name) + 1);  // Allocate memory for the name
+    strcpy_s(u->name, strlen(name) + 1, name);  // Use strcpy_s instead of strcpy
     u->leftFriend = NULL;
     u->rightFriend = NULL;
     return u;
@@ -37,7 +37,7 @@ void freeTree(User* root) {
     free(root);
 }
 
-int main() {
+int main5() {
     User* root = createUser("Alice");
 
     User* bob = createUser("Bob");
@@ -45,10 +45,9 @@ int main() {
 
     connectFriends(root, bob, carol);
 
-    
     User* eve = createUser("Eve");
-    connectFriends(bob, eve, NULL); 
-    eve = createUser("EveShadow");  
+    connectFriends(bob, eve, NULL);
+    eve = createUser("EveShadow");
 
     printTree(root);
     freeTree(root);

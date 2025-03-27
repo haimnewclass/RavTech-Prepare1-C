@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>  // for sleep
+#include <windows.h>  // for sleep
 
 #define STR_SIZE 100
 
@@ -15,7 +15,7 @@ char* createMessage(int i) {
     return buffer;  
 }
 
-int main() {
+int main4() {
     int counter = 0;
 
     while (1) {
@@ -24,7 +24,7 @@ int main() {
 
         
         counter++;
-        sleep(1); 
+        Sleep(1); 
     }
 
     return 0;

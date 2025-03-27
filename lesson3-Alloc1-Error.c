@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 #include <stdlib.h>
 
 int compute_sum(int* arr, int size) {
@@ -9,7 +10,7 @@ int compute_sum(int* arr, int size) {
     return sum;
 }
 
-int main() {
+int main3() {
     int n;
     printf("Enter number of elements: ");
     scanf("%d", &n);

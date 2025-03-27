@@ -28,7 +28,7 @@ void question4_2() {
 void question4_3() {
 	printf("please enter a string\n");
 	char str[100];
-	scanf("%s", str);
+	s_scanf("%s", str);
 	char* left = str;
 	char* right = str + strlen(str) - 1;
 	while (left < right) {
@@ -81,7 +81,7 @@ int main() {
 	while (1) {
 		printf("Welcome to practice number 4!,\nchoose a question between 1 and 4 you want to run.\nPress 0 to exit\n");
 		int question;
-		scanf("%d", &question);
+		s_scanf("%d", &question);
 		switch (question) {
 		case 0: return 0;
 		case 1: question4_1(); break;
